@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Tickly",
+  "name": "Tickly 🍅",
   "version": "1.0.0",
-  "description": "Tickly - A productivity-focused Pomodoro timer with notifications, session tracking, and customizable themes.",
+  "description": "Tickly - Boost productivity with a clean, modern Pomodoro timer. Features dark mode, smart notifications, and session tracking to keep you focused.",
   "permissions": [
     "notifications",
     "storage",

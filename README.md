@@ -1,10 +1,11 @@
-# Tickly - Pomodoro Timer Chrome Extension
+# Tickly - Minimalist Pomodoro Timer & Focus Tool
 
-A production-ready Chrome extension that implements a Pomodoro timer to help you stay focused and productive. Tickly features a clean, modern interface with tomato red accents, persistent state management, desktop notifications, and session tracking.
+Boost productivity with a clean, modern Pomodoro timer. Features dark mode, smart notifications, and session tracking to keep you focused.
 
 ## Features
 
 ### Core Functionality
+
 - **25-minute work sessions** - Standard Pomodoro technique
 - **5-minute short breaks** - Quick rest between work sessions
 - **15-minute long breaks** - Extended break after every 4 cycles
@@ -12,6 +13,7 @@ A production-ready Chrome extension that implements a Pomodoro timer to help you
 - **Persistent state** - Timer continues running even when popup is closed
 
 ### User Interface
+
 - **Clean, modern design** - Responsive UI with smooth animations
 - **Dark/Light theme toggle** - Choose your preferred theme
 - **Real-time timer display** - Large, easy-to-read countdown
@@ -19,6 +21,7 @@ A production-ready Chrome extension that implements a Pomodoro timer to help you
 - **Badge counter** - Extension icon shows remaining minutes
 
 ### Advanced Features
+
 - **Desktop notifications** - Alerts when sessions complete
 - **Sound notifications** - Audio feedback for session completion
 - **Session history** - Track completed Pomodoros for today
@@ -30,19 +33,23 @@ A production-ready Chrome extension that implements a Pomodoro timer to help you
 ### From Source (Developer Mode)
 
 1. **Download or clone this repository**
+
    ```bash
    git clone <repository-url>
    cd "Tickly"
    ```
 
 2. **Open Chrome Extensions page**
+
    - Navigate to `chrome://extensions/`
    - Or go to Menu → More Tools → Extensions
 
 3. **Enable Developer Mode**
+
    - Toggle the "Developer mode" switch in the top-right corner
 
 4. **Load the extension**
+
    - Click "Load unpacked"
    - Select the extension directory (`Tickly`)
 
@@ -55,6 +62,7 @@ A production-ready Chrome extension that implements a Pomodoro timer to help you
 The extension requires icon files. You have two options:
 
 **Option 1: Create your own icons**
+
 - Create icon files in the `icons/` directory:
   - `icon16.png` (16x16 pixels)
   - `icon32.png` (32x32 pixels)
@@ -63,6 +71,7 @@ The extension requires icon files. You have two options:
 - Use a tomato emoji (🍅) or Pomodoro-themed design
 
 **Option 2: Use placeholder icons**
+
 - You can use any PNG images temporarily for testing
 - Recommended: Create simple colored squares with "P" or tomato emoji
 
@@ -71,19 +80,23 @@ The extension requires icon files. You have two options:
 ### Basic Operation
 
 1. **Open the extension**
+
    - Click the extension icon in the Chrome toolbar
    - The popup will display the current timer state
 
 2. **Start a work session**
+
    - Click the "Start" button
    - The timer will count down from 25:00
    - The badge on the extension icon shows remaining minutes
 
 3. **Pause/Resume**
+
    - Click "Pause" to pause the timer
    - Click "Resume" to continue from where you left off
 
 4. **Reset**
+
    - Click "Reset" to return to the initial state
    - Confirmation dialog will appear
 
@@ -139,6 +152,7 @@ Tickly/
 ### Timer Accuracy
 
 The timer uses a combination of:
+
 - `Date.now()` for precise timestamp tracking
 - Interval-based updates (1 second)
 - State persistence to handle browser restarts
@@ -147,6 +161,7 @@ The timer uses a combination of:
 ### State Management
 
 All timer state is stored in `chrome.storage.local`:
+
 - Current session type and time remaining
 - Running/paused status
 - Cycle count
@@ -159,13 +174,14 @@ All timer state is stored in `chrome.storage.local`:
 
 1. **Load unpacked extension** (see Installation)
 2. **Test all features**:
+
    - Start/pause/reset/skip
    - Close and reopen popup (state should persist)
    - Let timer complete (check notifications)
    - Test theme toggle
    - Verify badge updates
 
-2. **Check console for errors**:
+3. **Check console for errors**:
    - Open popup → Right-click → Inspect
    - Check background worker: Extensions page → Service Worker link
 
@@ -193,12 +209,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
 
 For issues, questions, or suggestions:
+
 - Open an issue on the repository
 - Check existing issues for solutions
 
 ## Changelog
 
 ### Version 1.0.0
+
 - Initial release
 - Core Pomodoro functionality
 - Dark/light theme support
@@ -214,4 +232,3 @@ For issues, questions, or suggestions:
 ---
 
 **Enjoy your focused work sessions! 🍅**
-
