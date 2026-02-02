@@ -2,14 +2,8 @@
   "manifest_version": 3,
   "name": "Tickly 🍅",
   "version": "1.0.0",
-  "description": "Tickly - Boost productivity with a clean, modern Pomodoro timer. Features dark mode, smart notifications, and session tracking to keep you focused.",
-  "permissions": [
-    "notifications",
-    "storage",
-    "alarms",
-    "scripting",
-    "tabs"
-  ],
+  "description": "A clean, modern Pomodoro timer with dark mode, smart notifications, and session tracking.",
+  "permissions": ["notifications", "storage", "alarms", "scripting", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
@@ -29,4 +23,3 @@
     "128": "icons/icon128.png"
   }
 }
-
